@@ -9,10 +9,18 @@ body {
 
 #ansvideo {
   visibility: hidden;
+  opacity: 0 !important;
+  position: absolute !important;
+  z-index: -999 !important;
+  overflow: hidden !important;
 }
 
 #novideo {
   visibility: hidden;
+  opacity: 0 !important;
+  position: absolute !important;
+  z-index: -999 !important;
+  overflow: hidden !important;
 }
 
 #noButton {
