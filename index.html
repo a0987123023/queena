@@ -132,6 +132,9 @@
           不要
         </button>
       </div>
+      <video id="novideo" width="0" height="0" controls>
+        <source src="image/SadMoment.mp4" type="video/mp4" />
+      </video>
     </div>
     <div id="ans" class="container">
       <div>
@@ -141,7 +144,7 @@
         <img src="image/ans.gif" alt="Cute animated illustration" />
       </div>
       <video
-        style="position: absolute; z-index: -100; opacity: 0"
+        style="position: absolute; z-index: -999"
         id="ansvideo"
         width="0"
         height="0"
@@ -161,12 +164,14 @@
     };
 
     function playAudio() {
-      document.getElementById("novideo").play();
+      // document.getElementById("novideo").play();
     }
 
     function nextPage() {
+      //window.location.href = "yes.html";
       document.getElementById("ans").style.display = "block";
-      document.getElementById("ansvideo").opacity = "0";
+      document.getElementById("ask").style.display = "none";
+      document.getElementById("ansvideo").style.display = "none";
       document.getElementById("ansvideo").play();
     }
 
